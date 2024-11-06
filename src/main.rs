@@ -110,10 +110,6 @@ impl Inventory{
         self.games.push(new_game);
     }
 
-    //fn game_exist(&self, name:&str) -> bool{
-        //self.games.
-    //}
-
     fn remove_game(&mut self, game_name:String){
         self.games.retain(|x| x.name!=game_name);
     }
@@ -203,7 +199,6 @@ fn main() {
         stock: 12,
     };
 
-    // Crea un inventario y añade los juegos de prueba
     let mut inventory = Inventory { games: Vec::new() };
 
     inventory.add_game(game1);
